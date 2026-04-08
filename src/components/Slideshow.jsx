@@ -9,7 +9,7 @@ function Slideshow({ currentIndex, setCurrentIndex }) {
 
   return (
     <div className="grow flex flex-col">
-      <SlideshowMain />
+      <SlideshowMain currentData={currentData} />
       <SlideshowFooter currentIndex={currentIndex} setCurrentIndex={setCurrentIndex} currentData={currentData} dataAmount={dataAmount} />
     </div>
   )

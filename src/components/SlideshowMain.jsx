@@ -1,6 +1,9 @@
-function SlideshowMain() {
+import SlideshowHeader from "./SlideshowHeader";
+
+function SlideshowMain({ currentData }) {
   return (
-    <div className="grow">
+    <div className="grow px-6">
+      <SlideshowHeader currentData={currentData} />
     </div>
   )
 }
