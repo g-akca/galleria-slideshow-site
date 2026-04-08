@@ -1,9 +1,19 @@
 import GalleryItem from "./GalleryItem";
 
+import data from "../data/data.json";
+
 function GallerySection() {
   return (
     <section className="flex flex-col gap-10">
-      <GalleryItem />
+      {data.map(item => (
+        <GalleryItem 
+          key={item.name}
+          image={item.images.gallery}
+          title={item.name}
+          artist={item.artist.name}
+          className={item.galleryHeight}
+        />
+      ))}
     </section>
   )
 }

@@ -1,19 +1,17 @@
-import thumbnail from "/assets/starry-night/gallery.jpg";
-
-function GalleryItem() {
+function GalleryItem({ image, title, artist, className }) {
   return (
-    <div className="relative h-62.5">
+    <div className={`relative ${className}`}>
       <img
-        src={thumbnail}
-        alt="Starry Night painting by Vincent Van Gogh"
+        src={image}
+        alt={`${title} painting by ${artist}`}
         className="w-full h-full object-cover"
       />
 
       <div className="absolute bottom-0 w-full h-42.5 bg-linear-to-b from-transparent to-black/84" />
 
       <div className="absolute bottom-8 left-8 text-white flex flex-col gap-2">
-        <p className="text-[24px] leading-[125%] font-bold">Starry Night</p>
-        <p className="text-[13px] leading-[125%] opacity-75">Vincent Van Gogh</p>
+        <p className="text-[24px] leading-[125%] font-bold">{title}</p>
+        <p className="text-[13px] leading-[125%] opacity-75">{artist}</p>
       </div>
     </div>
   )
