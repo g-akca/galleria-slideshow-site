@@ -6,7 +6,7 @@ function App() {
     <div className="text-base leading-base text-grey-400">
       <Header />
 
-      <main>
+      <main className="px-8 py-6">
         <GallerySection />
       </main>
     </div>
