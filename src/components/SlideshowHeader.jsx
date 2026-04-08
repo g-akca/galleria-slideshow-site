@@ -2,14 +2,24 @@ import viewIcon from "/assets/shared/icon-view-image.svg";
 
 function SlideshowHeader({ currentData }) {
   return (
-    <>
-      <div className="relative h-70">
-        <img src={currentData.images.hero.small} alt={`${currentData.title} painting by ${currentData.artist.name}`} className="w-full h-full object-cover" />
+    <div className="relative tablet:w-172 tablet:self-center">
+      <div className="relative h-70 tablet:h-140">
+        <picture>
+          <source
+            media="(min-width: 768px)"
+            srcSet={currentData.images.hero.large}
+          />
+          <img
+            src={currentData.images.hero.small}
+            alt={`${currentData.title} painting by ${currentData.artist.name}`}
+            className="w-full tablet:w-118.75 h-full object-cover"
+          />
+        </picture>
 
         <button 
           type="button" 
           className="
-            absolute top-4 left-4 bg-black flex gap-4 items-center px-4 py-3.5
+            absolute top-4 tablet:top-auto tablet:bottom-4 left-4 bg-black flex gap-4 items-center px-4 py-3.5
             text-white text-[10px] leading-[120%] font-bold tracking-[2px] uppercase
           "
         >
@@ -18,13 +28,15 @@ function SlideshowHeader({ currentData }) {
         </button>
       </div>
       
-      <div className="bg-white w-70.5 -mt-14 p-6 relative z-10 flex flex-col gap-2">
-        <h2 className="font-bold text-black text-[24px] leading-[125%]">{currentData.name}</h2>
-        <p className="text-grey-400 text-[15px] leading-[135%]">{currentData.artist.name}</p>
-      </div>
+      <div className="flex flex-col items-start -mt-14 tablet:mt-0 relative tablet:absolute tablet:top-0 tablet:right-0 z-10">
+        <div className="bg-white w-70.5 tablet:w-111.25 p-6 tablet:pt-0 tablet:pr-0 tablet:pl-16 tablet:pb-16 flex flex-col gap-2 tablet:gap-6">
+          <h2 className="font-bold text-black text-[24px] tablet:text-[56px] leading-[125%] tablet:leading-[115%]">{currentData.name}</h2>
+          <p className="text-grey-400 text-[15px] leading-[135%]">{currentData.artist.name}</p>
+        </div>
 
-      <img src={currentData.artist.image} alt={currentData.artist.name} className="ml-4 h-16" />
-    </>
+        <img src={currentData.artist.image} alt={currentData.artist.name} className="h-16 tablet:h-32 ml-4 tablet:ml-65" />
+      </div>
+    </div>
   )
 }
 

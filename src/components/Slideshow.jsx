@@ -10,7 +10,7 @@ function Slideshow({ currentIndex, setCurrentIndex }) {
 
   return (
     <div className="grow flex flex-col pb-16">
-      <div className="grow px-6">
+      <div className="grow px-6 tablet:px-10 tablet:flex tablet:flex-col tablet:gap-16">
         <SlideshowHeader currentData={currentData} />
         <SlideshowInfo currentData={currentData} />
       </div>
