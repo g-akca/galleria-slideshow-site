@@ -3,7 +3,7 @@ import useColumnCount from "../hooks/useColumnCount";
 import data from "../data/data.json";
 import { useMemo } from "react";
 
-function GallerySection() {
+function GallerySection({ setShowStarted }) {
   const columnCount = useColumnCount();
 
   const columns = useMemo(() => {
