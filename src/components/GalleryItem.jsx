@@ -1,6 +1,6 @@
-function GalleryItem({ image, title, artist, style }) {
+function GalleryItem({ image, title, artist, style, handleClick }) {
   return (
-    <div className="relative" style={style}>
+    <div className="relative" style={style} onClick={handleClick}>
       <img
         src={image}
         alt={`${title} painting by ${artist}`}

@@ -3,7 +3,7 @@ import useColumnCount from "../hooks/useColumnCount";
 import data from "../data/data.json";
 import { useMemo } from "react";
 
-function GallerySection({ setShowStarted }) {
+function GallerySection({ startShow }) {
   const columnCount = useColumnCount();
 
   const columns = useMemo(() => {
@@ -39,6 +39,7 @@ function GallerySection({ setShowStarted }) {
               title={item.name}
               artist={item.artist.name}
               style={{ height: `${item.galleryHeight}px` }}
+              handleClick={() => startShow(data.findIndex(el => el.name === item.name))}
             />
           ))}
         </div>
