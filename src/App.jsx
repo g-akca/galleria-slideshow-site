@@ -19,11 +19,11 @@ function App() {
   }
 
   return (
-    <div className="text-base leading-base text-grey-400">
+    <div className="text-base leading-base text-grey-400 min-h-screen flex flex-col">
       <Header showStarted={showStarted} startShow={startShow} stopShow={stopShow} />
 
       {showStarted ? (
-        <main className="pt-6 tablet:pt-10 desktop:pt-24">
+        <main className="pt-6 tablet:pt-10 desktop:pt-24 grow flex flex-col">
           <Slideshow currentIndex={currentIndex} />
         </main>
       ) : (
