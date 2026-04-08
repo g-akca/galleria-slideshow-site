@@ -16,7 +16,9 @@
       },
       "gallery": "./assets/starry-night/gallery.jpg"
     },
-    "galleryHeight": "250"
+    "galleryHeight": "250",
+    "tabletCol": 0,
+    "desktopCol": 0
   },
   {
     "name": "Girl with a Pearl Earring",
@@ -35,7 +37,9 @@
       },
       "gallery": "./assets/girl-with-pearl-earring/gallery.jpg"
     },
-    "galleryHeight": "400"
+    "galleryHeight": "400",
+    "tabletCol": 1,
+    "desktopCol": 1
   },
   {
     "name": "Guernica",
@@ -54,7 +58,9 @@
       },
       "gallery": "./assets/guernica/gallery.jpg"
     },
-    "galleryHeight": "285"
+    "galleryHeight": "285",
+    "tabletCol": 0,
+    "desktopCol": 2
   },
   {
     "name": "Penitent Magdalene",
@@ -73,7 +79,9 @@
       },
       "gallery": "./assets/penitent-magdalene/gallery.jpg"
     },
-    "galleryHeight": "250"
+    "galleryHeight": "250",
+    "tabletCol": 1,
+    "desktopCol": 3
   },
   {
     "name": "The Storm on the Sea of Galilee",
@@ -92,7 +100,9 @@
       },
       "gallery": "./assets/the-storm-on-the-sea-of-galilee/gallery.jpg"
     },
-    "galleryHeight": "340"
+    "galleryHeight": "340",
+    "tabletCol": 0,
+    "desktopCol": 0
   },
   {
     "name": "The Great Wave off Kanagawa",
@@ -111,7 +121,9 @@
       },
       "gallery": "./assets/the-great-wave-off-kanagawa/gallery.jpg"
     },
-    "galleryHeight": "280"
+    "galleryHeight": "280",
+    "tabletCol": 1,
+    "desktopCol": 1
   },
   {
     "name": "Van Gogh Self-portrait",
@@ -130,7 +142,9 @@
       },
       "gallery": "./assets/van-gogh-self-portrait/gallery.jpg"
     },
-    "galleryHeight": "500"
+    "galleryHeight": "500",
+    "tabletCol": 0,
+    "desktopCol": 2
   },
   {
     "name": "The Sleeping Gypsy",
@@ -149,7 +163,9 @@
       },
       "gallery": "./assets/the-sleeping-gypsy/gallery.jpg"
     },
-    "galleryHeight": "250"
+    "galleryHeight": "250",
+    "tabletCol": 1,
+    "desktopCol": 3
   },
   {
     "name": "Lady with an Ermine",
@@ -168,7 +184,9 @@
       },
       "gallery": "./assets/lady-with-an-ermine/gallery.jpg"
     },
-    "galleryHeight": "420"
+    "galleryHeight": "420",
+    "tabletCol": 0,
+    "desktopCol": 0
   },
   {
     "name": "The Night Café",
@@ -187,7 +205,9 @@
       },
       "gallery": "./assets/the-night-cafe/gallery.jpg"
     },
-    "galleryHeight": "260"
+    "galleryHeight": "260",
+    "tabletCol": 1,
+    "desktopCol": 1
   },
   {
     "name": "The Basket of Apples",
@@ -206,7 +226,9 @@
       },
       "gallery": "./assets/the-basket-of-apples/gallery.jpg"
     },
-    "galleryHeight": "430"
+    "galleryHeight": "430",
+    "tabletCol": 1,
+    "desktopCol": 3
   },
   {
     "name": "The Boy in the Red Vest",
@@ -225,7 +247,9 @@
       },
       "gallery": "./assets/the-boy-in-the-red-vest/gallery.jpg"
     },
-    "galleryHeight": "260"
+    "galleryHeight": "260",
+    "tabletCol": 0,
+    "desktopCol": 0
   },
   {
     "name": "Arnolfini Portrait",
@@ -244,7 +268,9 @@
       },
       "gallery": "./assets/arnolfini-portrait/gallery.jpg"
     },
-    "galleryHeight": "330"
+    "galleryHeight": "330",
+    "tabletCol": 1,
+    "desktopCol": 1
   },
   {
     "name": "Mona Lisa",
@@ -263,7 +289,9 @@
       },
       "gallery": "./assets/mona-lisa/gallery.jpg"
     },
-    "galleryHeight": "525"
+    "galleryHeight": "525",
+    "tabletCol": 0,
+    "desktopCol": 2
   },
   {
     "name": "The Swing",
@@ -282,6 +310,8 @@
       },
       "gallery": "./assets/the-swing/gallery.jpg"
     },
-    "galleryHeight": "340"
+    "galleryHeight": "340",
+    "tabletCol": 1,
+    "desktopCol": 3
   }
 ]
