@@ -3,7 +3,7 @@ import nextImg from "/assets/shared/icon-next-button.svg";
 
 function SlideshowFooter({ currentIndex, setCurrentIndex, currentData, dataAmount }) {
   return (
-    <footer className="relative py-4 px-6 flex justify-between items-center border-grey-150 border-t">
+    <footer className="fixed bottom-0 w-screen z-50 bg-white py-4 px-6 flex justify-between items-center border-grey-150 border-t">
       <div className="absolute -top-px left-0 h-px bg-black" style={{ width: `${((currentIndex + 1) / dataAmount) * 100}%` }} />
 
       <div className="text-black">
