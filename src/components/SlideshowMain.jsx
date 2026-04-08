@@ -1,7 +1,7 @@
 function SlideshowMain() {
   return (
-    <>
-    </>
+    <div className="grow">
+    </div>
   )
 }
 

@@ -24,7 +24,7 @@ function App() {
 
       {showStarted ? (
         <main className="pt-6 tablet:pt-10 desktop:pt-24 grow flex flex-col">
-          <Slideshow currentIndex={currentIndex} />
+          <Slideshow currentIndex={currentIndex} setCurrentIndex={setCurrentIndex} />
         </main>
       ) : (
         <main className="px-8 py-6 tablet:px-13.5 tablet:py-10.5 desktop:p-10">

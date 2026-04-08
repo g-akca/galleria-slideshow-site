@@ -3,13 +3,14 @@ import SlideshowFooter from "./SlideshowFooter";
 
 import data from "../data/data.json";
 
-function Slideshow({ currentIndex }) {
-  const currentData = data[currentIndex];
+function Slideshow({ currentIndex, setCurrentIndex }) {
+  const currentData = data[currentIndex] || data[0];
+  const dataAmount = data.length;
 
   return (
-    <div className="grow">
+    <div className="grow flex flex-col">
       <SlideshowMain />
-      <SlideshowFooter />
+      <SlideshowFooter currentIndex={currentIndex} setCurrentIndex={setCurrentIndex} currentData={currentData} dataAmount={dataAmount} />
     </div>
   )
 }
