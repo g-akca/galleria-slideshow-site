@@ -11,7 +11,7 @@ function GallerySection() {
           image={item.images.gallery}
           title={item.name}
           artist={item.artist.name}
-          className={item.galleryHeight}
+          style={{ height: `${item.galleryHeight}px` }}
         />
       ))}
     </section>

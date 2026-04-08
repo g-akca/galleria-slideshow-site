@@ -1,6 +1,6 @@
-function GalleryItem({ image, title, artist, className }) {
+function GalleryItem({ image, title, artist, style }) {
   return (
-    <div className={`relative ${className}`}>
+    <div className="relative" style={style}>
       <img
         src={image}
         alt={`${title} painting by ${artist}`}
