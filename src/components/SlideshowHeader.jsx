@@ -1,6 +1,8 @@
 import { useState } from "react";
 import viewIcon from "/assets/shared/icon-view-image.svg";
 
+import SlideshowModal from "./SlideshowModal";
+
 function SlideshowHeader({ currentData }) {
   const [modalActive, setModalActive] = useState(false);
 
@@ -45,18 +47,11 @@ function SlideshowHeader({ currentData }) {
       </div>
 
       {modalActive && (
-        <div className="fixed inset-0 z-50 bg-black/85 flex items-center justify-center px-6 tablet:px-12">
-          <div className="flex flex-col items-center gap-6 tablet:gap-8 max-h-[90vh]">
-            <button
-              onClick={() => setModalActive(false)}
-              className="text-white font-bold tracking-base uppercase self-end cursor-pointer transition-all hover:opacity-25"
-            >
-              Close
-            </button>
-
-            <img src={currentData.images.gallery} alt={currentData.name} className="object-cover shrink min-h-0" />
-          </div>
-        </div>
+        <SlideshowModal 
+          image={currentData.images.gallery} 
+          name={currentData.name} 
+          closeModal={() => setModalActive(false)}
+        />
       )}
     </>
   )
