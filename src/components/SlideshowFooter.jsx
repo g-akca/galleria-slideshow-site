@@ -12,11 +12,11 @@ function SlideshowFooter({ currentIndex, setCurrentIndex, currentData, dataAmoun
       </div>
       
       <div className="flex gap-6 tablet:gap-10">
-        <button type="button" onClick={() => setCurrentIndex(prev => prev - 1)} disabled={currentIndex === 0} className={`${currentIndex === 0 ? "opacity-15 cursor-not-allowed" : ""}`}>
+        <button type="button" onClick={() => setCurrentIndex(prev => prev - 1)} disabled={currentIndex === 0} className={`${currentIndex === 0 ? "opacity-15 cursor-not-allowed" : "cursor-pointer transition-all hover:opacity-15"}`}>
           <img src={backImg} alt="Back button" className="h-4 tablet:h-6" />
         </button>
 
-        <button type="button" onClick={() => setCurrentIndex(prev => prev + 1)} disabled={currentIndex === dataAmount - 1} className={`${currentIndex === dataAmount - 1 ? "opacity-15 cursor-not-allowed" : ""}`}>
+        <button type="button" onClick={() => setCurrentIndex(prev => prev + 1)} disabled={currentIndex === dataAmount - 1} className={`${currentIndex === dataAmount - 1 ? "opacity-15 cursor-not-allowed" : "cursor-pointer transition-all hover:opacity-15"}`}>
           <img src={nextImg} alt="Next button" className="h-4 tablet:h-6" />
         </button>
       </div>

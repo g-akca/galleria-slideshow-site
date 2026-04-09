@@ -26,6 +26,7 @@ function SlideshowHeader({ currentData }) {
             className="
               absolute top-4 tablet:top-auto tablet:bottom-4 left-4 bg-black flex gap-4 items-center px-4 py-3.5
               text-white text-[10px] leading-[120%] font-bold tracking-[2px] uppercase
+              cursor-pointer transition-all hover:bg-white/25
             "
           >
             <img src={viewIcon} alt="View image" />
@@ -48,7 +49,7 @@ function SlideshowHeader({ currentData }) {
           <div className="flex flex-col items-center gap-6 tablet:gap-8 max-h-[90vh]">
             <button
               onClick={() => setModalActive(false)}
-              className="text-white font-bold tracking-base uppercase self-end"
+              className="text-white font-bold tracking-base uppercase self-end cursor-pointer transition-all hover:opacity-25"
             >
               Close
             </button>

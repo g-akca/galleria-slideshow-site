@@ -7,7 +7,7 @@ function Header({ showStarted, startShow, stopShow }) {
 
       <button 
         type="button" 
-        className="uppercase font-bold text-[9px] tablet:text-[12px] leading-[125%] tracking-[2px] tablet:tracking-[2.5px] cursor-pointer"
+        className="uppercase font-bold text-[9px] tablet:text-[12px] leading-[125%] tracking-[2px] tablet:tracking-[2.5px] cursor-pointer transition-all hover:text-black"
         onClick={showStarted ? stopShow : startShow}
       >
         {showStarted ? "Stop Slideshow" : "Start Slideshow"}
