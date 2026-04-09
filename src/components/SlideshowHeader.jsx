@@ -1,3 +1,4 @@
+import { AnimatePresence } from "framer-motion";
 import { useState } from "react";
 import viewIcon from "/assets/shared/icon-view-image.svg";
 
@@ -46,13 +47,15 @@ function SlideshowHeader({ currentData }) {
         </div>
       </div>
 
-      {modalActive && (
-        <SlideshowModal 
-          image={currentData.images.gallery} 
-          name={currentData.name} 
-          closeModal={() => setModalActive(false)}
-        />
-      )}
+      <AnimatePresence>
+        {modalActive && (
+          <SlideshowModal 
+            image={currentData.images.gallery} 
+            name={currentData.name} 
+            closeModal={() => setModalActive(false)}
+          />
+        )}
+      </AnimatePresence>
     </>
   )
 }
