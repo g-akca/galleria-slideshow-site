@@ -9,6 +9,8 @@ function App() {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   function startShow(index = 0) {
+    if (typeof index !== "number") index = 0;
+    
     setCurrentIndex(index);
     setShowStarted(true);
   }
