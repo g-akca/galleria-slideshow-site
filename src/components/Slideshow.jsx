@@ -9,8 +9,8 @@ function Slideshow({ currentIndex, setCurrentIndex }) {
   const dataAmount = data.length;
 
   return (
-    <div className="grow flex flex-col pb-16">
-      <div className="grow px-6 tablet:px-10 tablet:flex tablet:flex-col tablet:gap-16">
+    <div className="grow flex flex-col pb-16 desktop:pb-48">
+      <div className="grow px-6 tablet:px-10 flex flex-col tablet:gap-16 desktop:flex-row desktop:justify-between">
         <SlideshowHeader currentData={currentData} />
         <SlideshowInfo currentData={currentData} />
       </div>
