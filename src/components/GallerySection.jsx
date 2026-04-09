@@ -2,6 +2,7 @@ import GalleryItem from "./GalleryItem";
 import useColumnCount from "../hooks/useColumnCount";
 import data from "../data/data.json";
 import { useMemo } from "react";
+import { motion } from "framer-motion";
 
 function GallerySection({ startShow }) {
   const columnCount = useColumnCount();
@@ -33,14 +34,20 @@ function GallerySection({ startShow }) {
       {columns.map((col, i) => (
         <div key={i} className="flex flex-col gap-10 flex-1">
           {col.map(item => (
-            <GalleryItem
+            <motion.div
               key={item.name}
-              image={item.images.gallery}
-              title={item.name}
-              artist={item.artist.name}
-              style={{ height: `${item.galleryHeight}px` }}
-              handleClick={() => startShow(data.findIndex(el => el.name === item.name))}
-            />
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: i * 0.1, duration: 0.5 }}
+            >
+              <GalleryItem
+                image={item.images.gallery}
+                title={item.name}
+                artist={item.artist.name}
+                style={{ height: `${item.galleryHeight}px` }}
+                handleClick={() => startShow(data.findIndex(el => el.name === item.name))}
+              />
+            </motion.div>
           ))}
         </div>
       ))}
