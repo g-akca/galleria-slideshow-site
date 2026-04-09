@@ -44,8 +44,8 @@ function SlideshowHeader({ currentData }) {
       </div>
 
       {modalActive && (
-        <div className="fixed inset-0 z-50 bg-black/85 flex items-center justify-center px-6">
-          <div className="w-full flex flex-col gap-6">
+        <div className="fixed inset-0 z-50 bg-black/85 flex items-center justify-center px-6 tablet:px-12">
+          <div className="flex flex-col items-center gap-6 tablet:gap-8 max-h-[90vh]">
             <button
               onClick={() => setModalActive(false)}
               className="text-white font-bold tracking-base uppercase self-end"
@@ -53,7 +53,7 @@ function SlideshowHeader({ currentData }) {
               Close
             </button>
 
-            <img src={currentData.images.gallery} alt={currentData.name} className="object-cover max-h-[75vh]" />
+            <img src={currentData.images.gallery} alt={currentData.name} className="object-cover shrink min-h-0" />
           </div>
         </div>
       )}
